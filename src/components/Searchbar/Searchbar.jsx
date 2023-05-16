@@ -21,10 +21,11 @@ export class Searchbar extends Component {
     handleSubmit = e => {
         e.preventDefault();
         if (this.state.query.trim() === '') {
-            toast.warn('Please enter your request!');
-            return;
+           return toast.warn('Please enter your request!');
+            
         };
-        this.props.onSubmit(this.setState.query);
+        this.props.onSubmit(this.state.query);
+        this.setState({ value: '' });
     }
     render() {
         const { query } = this.state;
