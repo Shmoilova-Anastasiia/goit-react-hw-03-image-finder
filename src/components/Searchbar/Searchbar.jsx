@@ -6,8 +6,7 @@ import {
     SearchFormInput
 } from './Searchbar.styled'
 import { HiSearch } from "react-icons/hi";
-import { ToastContainer, toast } from 'react-toastify';
-import PropTypes from 'prop-types';
+import { toast } from 'react-toastify';
 
 export class Searchbar extends Component {
     state = {
