@@ -6,11 +6,6 @@ import {
 } from './Modal.styled';
 
 export class Modal extends Component {
-  handleClick = e => {
-    if (e.target === e.currentTarget) {
-      this.props.onClose('');
-    }
-  };
 
   componentDidMount() {
     window.addEventListener('keydown', this.handleClose);
@@ -28,7 +23,7 @@ export class Modal extends Component {
 
     handleBackdropeClick = e => {
     if (e.target === e.currentTarget) {
-      this.props.onModalClose();
+      this.props.onClose();
     }
     };
     
